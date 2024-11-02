@@ -1,0 +1,23 @@
+---
+interface Props {
+	webTitle: string;
+	hrefAM: string;
+	hrefPF: string;
+	hrefCM: string;
+}
+
+const { webTitle, hrefAM, hrefPF, hrefCM } = Astro.props;
+---
+
+<li class="bar-links">
+	<h1>{webTitle}</h1>
+	<a href={hrefAM}>
+		About Me
+	</a>
+	<a href={hrefPF}>
+		Portfolio
+	</a>
+	<a href={hrefCM}>
+		Contact Me
+	</a>
+</li>
