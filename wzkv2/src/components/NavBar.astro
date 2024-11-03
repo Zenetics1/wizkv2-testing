@@ -8,31 +8,31 @@ interface Props {
 
 const { webTitle, hrefAM, hrefPF, hrefCM } = Astro.props;
 ---
-<div class="bg-white fixed w-screen h-30 shadow-lg"> 
-	<div class="text-black font-mono p-0 m-0">
-		<nav class="justify-center" >
-			<ul class="text-end pr-10">
-				<li class="text-start pl-10 text-2xl">
+<div class="bg-white w-screen h-5/6 shadow-lg"> 
+		<nav class=" font-mono p-0 m-0 h-full">
+			<ul class="flex items-center justify-between ">
+				<li class="text-bold text-transparent bg-clip-text bg-gradient-to-r from-red-800 via-red-500 to-blue-700 inline-block justify-start pl-10 text-5xl">
 					{webTitle}
 				</li>
-				<li> 
-					<a href={hrefAM}>
-						About Me
-					</a>
-				</li>
-				<li> 
-					<a href={hrefPF}>
-						Portfolio
-					</a>
-				</li>
-				<li> 
-					<a href={hrefCM}>
-						Contact Me
-					</a>
-				</li>
+				<div class="flex gap-10 space-x-4 pr-6 text-xl m-5 ">
+					<li class=""> 
+						<a href={hrefAM}>
+							About Me
+						</a>
+					</li>
+					<li> 
+						<a href={hrefPF}>
+							Portfolio
+						</a>
+					</li>
+					<li> 
+						<a href={hrefCM}>
+							Contact Me
+						</a>
+					</li>
+				</div>
 			</ul>
 		</nav>
-	</div>
 </div>
 	
 	
