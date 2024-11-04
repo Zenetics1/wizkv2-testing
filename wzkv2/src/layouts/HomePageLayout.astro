@@ -1,4 +1,7 @@
 ---
+import HMHeader from '../components/NavBar.astro';
+import Footer from '../components/Footer.astro';
+
 interface Props {
 	title: string;
 }
@@ -17,6 +20,10 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body class="bg-fixed bg-black bg-no-repeat bg-cover" style="background-image:url(/webimg2.jpg);">
+		<HMHeader webTitle='WIZK' hrefAM='/pages/index/' hrefPF='/pages/portfolio/' hrefCM='mailto:wizktec@gmail.com'></HMHeader>
 		<slot />
+		<Footer>
+			
+		</Footer>
 	</body>
 </html>
