@@ -3,17 +3,14 @@ import HMLayout from '../layouts/HomePageLayout.astro';
 ---
 
 <HMLayout title="WizK Landing"> 
-    <div class="text-white font-mono">
-        <h1 class="text-5xl">My name is William!</h1>
-         <h4 class="text-3xl">I'm<span class="typeTxt"></span></h4>
-         <p>I am currently a 16 year old high school student who has a passion for technology and computer hardware. <br> 
-            I enjoy coming up with fun ideas that I think will be useful in everyday life. <br>
-            This is the place where I can share progress on all my projects!
-        </p>
-    </div >
-</Layout>
+    <div class="flex items-center h-screen">
+        <div class="text-white font-mono max-w-screen-md  m-0 p-4 border-2 rounded-3xl relative bottom-20 left-40">
+            <h1 class="text-5xl font-bold">My name is <span class="text-red-500">William!</span></h1>
+             <p class="text-xl font-bold ">I am currently a 16 year old high school student who has a passion for technology and computer hardware. 
+                I enjoy coming up with fun ideas that allow me to explore my different interests.
+                This is the place where I can share progress on all my projects!
+            </p>
+        </div >
+    </div>
+</HMLayout>
 
-<script>
-    var Typed;
-    Typed = new Typed({})
-</script>
