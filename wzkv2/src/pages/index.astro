@@ -3,14 +3,26 @@ import HMLayout from '../layouts/HomePageLayout.astro';
 ---
 
 <HMLayout title="WizK Landing"> 
-    <div class="flex items-center h-screen">
-        <div class="text-white font-mono max-w-screen-md  m-0 p-4 border-2 rounded-3xl relative bottom-20 left-40">
-            <h1 class="text-5xl font-bold">My name is <span class="text-red-500">William!</span></h1>
-             <p class="text-xl font-bold ">I am currently a 16 year old high school student who has a passion for technology and computer hardware. 
-                I enjoy coming up with fun ideas that allow me to explore my different interests.
-                This is the place where I can share progress on all my projects!
+    <div class="flex items-center">
+        <div class="text-white font-mono max-w-screen-md m-0 p-4 border-2 rounded-3xl relative top-56 left-44">
+            <h1 class="text-5xl font-extrabold">My name is <span class="text-red-500">William!</span></h1>
+            <h2 class="text-4xl"><span class="type font-extrabold text-yellow-500"></span></h2>
+             <p class="text-2xl font-normal">I am a 16 year old high school student who has a passion for <span class="text-red-500 font-semibold">technology and computer hardware.</span> 
+                I enjoy coming up with <span class="text-yellow-500 font-semibold">fun ideas</span> that allow me to explore my different interests.
+                This is the place where all personal <span class="text-red-500 font-semibold">projects and progress </span> will be shared!
             </p>
         </div >
     </div>
 </HMLayout>
+
+
+<script type="text/javascript">
+    var Typed = new Typed('.type', {
+    strings:["Dreamer", "Innovator", "Team Player"],
+    typeSpeed:150,
+    backSpeed:150,
+    backDelay:1000,
+    loop:true
+});
+</script>
 
