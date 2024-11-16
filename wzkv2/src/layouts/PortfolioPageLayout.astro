@@ -2,7 +2,9 @@
 import HMHeader from '../components/NavBar.astro';
 import Footer from '../components/Footer.astro';
 import Slider from '../components/Slider.astro';
-import { fade, slide, ViewTransitions } from 'astro:transitions';
+import HMSideBar from "../components/SideBar.astro";
+
+import { fade, ViewTransitions } from 'astro:transitions';
 
 interface Props {
 	title: string;
@@ -16,14 +18,16 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, intial-scale=1.0" />
 		<link rel="icon" type="image/svg+xml" href="" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
         <ViewTransitions />
 	</head>
-	<body transition:animate="none" class="bg-fixed bg-black w-screen overflow-x-hidden">
-		<HMHeader webTitle='WIZK' hrefAM='/' hrefPF='/portforlio/' hrefCM='mailto:wizktec@gmail.com'></HMHeader>
+	<body transition:animate="none" class="bg-fixed bg-black bg-no-repeat bg-cover overflow-x-hidden">
+        <div class="box-border h-24 w-full">
+            <HMHeader webTitle='WIZK' hrefAM='/' hrefPF='/portforlio/' hrefCM='mailto:wizktec@gmail.com'></HMHeader>
+        </div>
         <div transition:animate={fade({duration: '40.0'})}>
             <div>
                 <h1 class="text-white text-center p-5 m-0 text-7xl font-mono">Projects</h1>
