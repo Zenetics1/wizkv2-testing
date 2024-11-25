@@ -5,8 +5,7 @@ interface Props{
 }
 const{VidLink, header} = Astro.props;
 ---
-<div class="bg-white h-96 rounded-2xl shadow-md">
-
+<div class="bg-white h-96 w-fit rounded-2xl shadow-md sm:w-[40%]">
     <div class="h-64 border-white">
         <iframe 
         width="100%" height="100%" 
@@ -16,8 +15,8 @@ const{VidLink, header} = Astro.props;
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen>
         </iframe>
-        <h1 class="font-mono text-center text-2xl font-bold">{header}</h1>
-        <p class="font-mono text-center text-sm font-bold"><slot /></p>
+        <h1 class="font-mono text-center font-bold text-md sm:text-2xl">{header}</h1>
+        <p class="font-mono text-center text-[80%] m-0 p-1"><slot /></p>
     </div>
        
 </div>
