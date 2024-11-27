@@ -12,7 +12,7 @@ function SideBar()
 				<path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"></path>
 			</svg>
 		</button>
-		<div id="sidebar" className={`bg-white fixed right-0 top-0 h-screen w-3/4 items-start justify-start shadow-md shadow-black z-50 ${isOpen ? 'translate-x-0' : 'translate-x-full'}`}>
+		<div id="sidebar" className={`bg-white fixed right-0 top-0 h-screen w-3/4 items-start justify-start shadow-md shadow-black z-50 ${isOpen ? 'hidden' : 'flex'}`}>
 				<nav className=" font-mono p-2 m-0">
 					<ul className="text-start text-3xl m-0 p-5">
 						<li>
