@@ -10,4 +10,5 @@ export default defineConfig({
   integrations: [tailwind(), react()],
   prefetch: true,
   site: 'https://wizk.ca',
+  base: '/Zenetics1.github.io',
 });
